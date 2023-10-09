@@ -1,0 +1,83 @@
+INSERT INTO presentacion(tamaño) VALUES('Chico');
+INSERT INTO presentacion(tamaño) VALUES('Mediano');
+INSERT INTO presentacion(tamaño) VALUES('Grande');
+
+INSERT INTO proveedor(nombre, telefono, domicilio) VALUES ('Nestle', 55946, 'Calle 1');
+INSERT INTO proveedor(nombre, telefono, domicilio) VALUES ('Zucarmex', 558629, 'Calle 2');
+INSERT INTO proveedor(nombre, telefono, domicilio) VALUES ('DM LATTEE', 55539, 'Calle 3');
+INSERT INTO proveedor(nombre, telefono, domicilio) VALUES ('Dulcresur', 93492, 'Calle 4');
+
+INSERT INTO pago(tipo) VALUES('Efectivo');
+INSERT INTO pago(tipo) VALUES('Credito');
+INSERT INTO pago(tipo) VALUES('Debito');
+
+INSERT INTO ingrediente(nombre, disponible, costo, id_proveedor) VALUES ('Cafe', 78, 6, 1);
+INSERT INTO ingrediente(nombre, disponible, costo, id_proveedor) VALUES ('Azucar', 84, 3, 2);
+INSERT INTO ingrediente(nombre, disponible, costo, id_proveedor) VALUES ('Leche', 49, 7, 3);
+INSERT INTO ingrediente(nombre, disponible, costo, id_proveedor) VALUES ('Galletas', 54, 5, 4);
+INSERT INTO ingrediente(nombre, disponible, costo, id_proveedor) VALUES ('Pastel', 27, 28, 4);
+INSERT INTO ingrediente(nombre, disponible, costo, id_proveedor) VALUES ('Pay', 21, 20, 4);
+INSERT INTO ingrediente(nombre, disponible, costo, id_proveedor) VALUES ('Helado', 48, 16, 4);
+INSERT INTO ingrediente(nombre, disponible, costo, id_proveedor) VALUES ('Muffin', 18, 7, 4);
+
+INSERT INTO articulo(nombre) VALUES ('Cafe Americano');
+INSERT INTO articulo(nombre) VALUES ('Cafe Capuchino');
+INSERT INTO articulo(nombre) VALUES ('Cafe Expresso');
+INSERT INTO articulo(nombre) VALUES ('Cafe Latte');
+INSERT INTO articulo(nombre) VALUES ('Cafe Moka');
+INSERT INTO articulo(nombre) VALUES ('Galletas');
+INSERT INTO articulo(nombre) VALUES ('Pastel');
+INSERT INTO articulo(nombre) VALUES ('Pay');
+INSERT INTO articulo(nombre) VALUES ('Helado');
+INSERT INTO articulo(nombre) VALUES ('Muffin');
+
+INSERT INTO preparacion(articulo, precio, tamaño, ingrediente) VALUES (1, 11, 2, 1);
+INSERT INTO preparacion(articulo, precio, tamaño, ingrediente) VALUES (1, 11, 2, 2);
+INSERT INTO preparacion(articulo, precio, tamaño, ingrediente) VALUES (1, 11, 2, 3);
+INSERT INTO preparacion(articulo, precio, tamaño, ingrediente) VALUES (2, 13, 2, 1);
+INSERT INTO preparacion(articulo, precio, tamaño, ingrediente) VALUES (2, 13, 2, 2);
+INSERT INTO preparacion(articulo, precio, tamaño, ingrediente) VALUES (2, 13, 2, 3);
+INSERT INTO preparacion(articulo, precio, tamaño, ingrediente) VALUES (3, 14, 2, 1);
+INSERT INTO preparacion(articulo, precio, tamaño, ingrediente) VALUES (3, 14, 2, 2);
+INSERT INTO preparacion(articulo, precio, tamaño, ingrediente) VALUES (3, 14, 2, 3);
+INSERT INTO preparacion(articulo, precio, tamaño, ingrediente) VALUES (4, 19, 2, 1);
+INSERT INTO preparacion(articulo, precio, tamaño, ingrediente) VALUES (4, 19, 2, 2);
+INSERT INTO preparacion(articulo, precio, tamaño, ingrediente) VALUES (4, 19, 2, 3);
+INSERT INTO preparacion(articulo, precio, tamaño, ingrediente) VALUES (5, 15, 2, 1);
+INSERT INTO preparacion(articulo, precio, tamaño, ingrediente) VALUES (5, 15, 2, 2);
+INSERT INTO preparacion(articulo, precio, tamaño, ingrediente) VALUES (5, 15, 2, 3);
+INSERT INTO preparacion(articulo, precio, tamaño, ingrediente) VALUES (6, 12, 2, 4);
+INSERT INTO preparacion(articulo, precio, tamaño, ingrediente) VALUES (7, 50, 2, 5);
+INSERT INTO preparacion(articulo, precio, tamaño, ingrediente) VALUES (8, 20, 2, 6);
+INSERT INTO preparacion(articulo, precio, tamaño, ingrediente) VALUES (9, 16, 2, 7);
+INSERT INTO preparacion(articulo, precio, tamaño, ingrediente) VALUES (10, 10, 2, 8);
+
+INSERT INTO venta(fecha, pago, costo, producto) VALUES('13/06/2021', 1, 13, 2);
+INSERT INTO venta(fecha, pago, costo, producto) VALUES('13/06/2021', 1, 13, 2);
+INSERT INTO venta(fecha, pago, costo, producto) VALUES('13/06/2021', 2, 11, 1);
+INSERT INTO venta(fecha, pago, costo, producto) VALUES('13/06/2021', 1, 14, 3);
+INSERT INTO venta(fecha, pago, costo, producto) VALUES('13/06/2021', 2, 13, 2);
+INSERT INTO venta(fecha, pago, costo, producto) VALUES('13/06/2021', 1, 11, 1);
+INSERT INTO venta(fecha, pago, costo, producto) VALUES('13/06/2021', 1, 14, 3);
+INSERT INTO venta(fecha, pago, costo, producto) VALUES('14/06/2021', 2, 13, 2);
+INSERT INTO venta(fecha, pago, costo, producto) VALUES('14/06/2021', 2, 11, 1);
+INSERT INTO venta(fecha, pago, costo, producto) VALUES('14/06/2021', 1, 11, 1);
+INSERT INTO venta(fecha, pago, costo, producto) VALUES('14/06/2021', 2, 50, 7);
+INSERT INTO venta(fecha, pago, costo, producto) VALUES('14/06/2021', 1, 50, 7);
+INSERT INTO venta(fecha, pago, costo, producto) VALUES('14/06/2021', 2, 12, 6);
+INSERT INTO venta(fecha, pago, costo, producto) VALUES('14/06/2021', 2, 50, 7);
+INSERT INTO venta(fecha, pago, costo, producto) VALUES('14/06/2021', 1, 11, 1);
+INSERT INTO venta(fecha, pago, costo, producto) VALUES('15/06/2021', 1, 16, 9);
+INSERT INTO venta(fecha, pago, costo, producto) VALUES('15/06/2021', 3, 11, 1);
+INSERT INTO venta(fecha, pago, costo, producto) VALUES('15/06/2021', 2, 11, 1);
+INSERT INTO venta(fecha, pago, costo, producto) VALUES('15/06/2021', 1, 19, 4);
+INSERT INTO venta(fecha, pago, costo, producto) VALUES('15/06/2021', 2, 14, 3);
+INSERT INTO venta(fecha, pago, costo, producto) VALUES('15/06/2021', 1, 15, 5);
+
+select * from presentacion;
+select * from proveedor;
+select * from articulo;
+select * from ingrediente;
+select * from preparacion;
+select * from pago;
+select * from venta;

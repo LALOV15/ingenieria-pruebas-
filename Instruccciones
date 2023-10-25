@@ -1,3 +1,5 @@
 1.-Ejecutar archivo .jar  *si no funciona descargar JDK https://www.oracle.com/mx/java/technologies/downloads/
-2.-Para conectar base de datos ejecutar MYSQL workbench https://dev.mysql.com/downloads/workbench/
-3.- Correr un script y ejecutar las intrucciones de Dump 20210614
+2.-Para conectar base de datos ejecutar MYSQL workbench descargar ->https://dev.mysql.com/downloads/workbench/
+3.-tambien este enlace https://downloads.mysql.com/archives/get/p/25/file/mysql-installer-community-8.0.26.0.msi
+4.-configurar workbench con usuario: root password:admin
+3.- Correr el script y ejecutar las intrucciones de Dump 20210614 y insert 
